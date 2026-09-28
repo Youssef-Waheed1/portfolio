@@ -8,6 +8,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
 
+  // basePath aware URL for GitHub Pages compatibility
+  const cvHref = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${site.cv}`;
+
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-page/90 backdrop-blur">
       <nav aria-label="Primary" className="mx-auto flex h-14 max-w-[1100px] items-center justify-between px-5 md:px-8">
@@ -25,8 +28,8 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href={site.cv}
-              download
+              href={cvHref}
+              download="Youssef_Waheed_CV.pdf"
               className="inline-flex items-center gap-1.5 rounded-md border border-line bg-card px-3 py-1.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
             >
               <Download size={14} aria-hidden /> Download CV
@@ -58,8 +61,8 @@ export default function Navbar() {
             ))}
             <li className="py-3">
               <a
-                href={site.cv}
-                download
+                href={cvHref}
+                download="Youssef_Waheed_CV.pdf"
                 onClick={close}
                 className="inline-flex items-center gap-1.5 rounded-md bg-accent-dark px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#722F27]"
               >
