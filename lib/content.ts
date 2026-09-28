@@ -49,9 +49,9 @@ export const experience = {
     "Implemented account approval workflows and failed login tracking.",
     "Designed a multi-level caching layer with tiered TTLs using a read-through pattern.",
     "Built REST API endpoints for financial queries.",
-    "Worked on RS ratings, technical screeners, XBRL parsing, and market breadth analysis.",
+    "Worked on RS ratings, technical screeners, and market breadth analysis.",
   ],
-  tech: ["FastAPI", "PostgreSQL", "Redis", "Next.js", "TypeScript", "JWT", "Argon2", "XBRL"],
+  tech: ["FastAPI", "PostgreSQL", "Redis", "Next.js", "TypeScript", "JWT", "Argon2"],
 };
 
 export type Project = {
@@ -79,10 +79,9 @@ export const featuredProject: Project = {
     "Financial REST APIs",
     "RS ratings",
     "Technical screeners",
-    "XBRL parsing",
     "Market breadth analysis",
   ],
-  tech: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "Redis", "SQLAlchemy", "JWT", "XBRL"],
+  tech: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "Redis", "SQLAlchemy", "JWT"],
 };
 
 export const projects: Project[] = [
